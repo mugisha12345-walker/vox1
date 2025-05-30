@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .contact-form { max-width: 400px; margin: auto; }
+        .contact-form label { display: block; margin-top: 15px; }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+      <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?cinema,africa');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Telling African stories through the lens of authenticity.</h2>
+      <a href="#portfolio" class="mt-4 inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="px-6 py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-4">About Us</h3>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+      Agasobanuyefilms is a visionary Rwandan film production company dedicated to telling real, raw, and resonant stories. We specialize in documentaries, short films, and creative video storytelling that celebrates African culture, identity, and experience.
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="px-6 py-16 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-8 text-center">Our Work</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?film,africa" alt="Film 1" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Echoes of the Hills</h4>
+        </div>
+      </div>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm"></form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script>
+        // Load saved values from localStorage
+        window.onload = function() {
+            if (localStorage.getItem('contactEmail')) {
+                document.getElementById('email').value = localStorage.getItem('contactEmail');
+            }
+            if (localStorage.getItem('contactMessage')) {
+                document.getElementById('message').value = localStorage.getItem('contactMessage');
+            }
+        };
+
+        // Save values to localStorage on input
+        document.getElementById('email').addEventListener('input', function() {
+            localStorage.setItem('contactEmail', this.value);
+        });
+        document.getElementById('message').addEventListener('input', function() {
+            localStorage.setItem('contactMessage', this.value);
+        });
+
+        // Optionally clear localStorage on submit
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            localStorage.removeItem('contactEmail');
+            localStorage.removeItem('contactMessage');
+            alert('Message sent!');
+            this.reset();
+        });
+    </script>
+</body>
+ <footer class="bg-black text-center py-6">
+    <p>&copy; 2025 Agasobanuyefilms. Built with passion in Rwanda.</p>
+  </footer>
+</html>

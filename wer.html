@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agasobanuyefilms</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 bg-black shadow-md">
+    <h1 class="text-2xl font-bold">Agasobanuyefilms</h1>
+    <nav class="space-x-4">
+      <a href="about" class="hover:text-yellow-400">About</a>
+      <a href="portfolio" class="hover:text-yellow-400">Portfolio</a>
+      <a href="services" class="hover:text-yellow-400">Services</a>
+      <a href="contact" class="hover:text-yellow-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?cinema,africa');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Telling African stories through the lens of authenticity.</h2>
+      <a href="#portfolio" class="mt-4 inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="px-6 py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-4">About Us</h3>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+      Agasobanuyefilms is a visionary Rwandan film production company dedicated to telling real, raw, and resonant stories. We specialize in documentaries, short films, and creative video storytelling that celebrates African culture, identity, and experience.
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="px-6 py-16 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-8 text-center">Our Work</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?film,africa" alt="Film 1" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Echoes of the Hills</h4>
+        </div>
+      </div>
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?movie,culture" alt="Film 2" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Voices of Kigali</h4>
+        </div>
+      </div>
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?cinematography,people" alt="Film 3" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Heritage in Motion</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="px-6 py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-8 text-center">Our Services</h3>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">🎥 Film Production</h4>
+        <p>From concept to screen, we bring powerful African narratives to life.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">📄 Scriptwriting & Development</h4>
+        <p>We help craft compelling stories with cultural depth and emotional resonance.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">🎞️ Post-Production Editing</h4>
+        <p>High-quality editing to ensure your film has a lasting impact.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">📷 Commercial Shoots</h4>
+        <p>Visually stunning ads and branded content with storytelling at the core.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-6 py-16 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-6 text-center">Contact Us</h3>
+    <div class="max-w-xl mx-auto text-center">
+      <p class="mb-4">📧 agasobanuyefilms@example.com</p>
+      <p class="mb-4">☎️ +250 123 456 789</p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="#" class="hover:text-yellow-400">Instagram</a>
+        <a href="#" class="hover:text-yellow-400">YouTube</a>
+        <a href="#" class="hover:text-yellow-400">Facebook</a>
+      </div>
+    </div>
+  </section>
+<!-- Testimonials -->
+<section class="px-6 py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-8 text-center">What Our Clients Say</h3>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
+            <p class="italic mb-4">"Agasobanuyefilms captured our story with such authenticity and heart. Their team is truly talented!"</p>
+            <div class="font-semibold">— Amina N., Kigali</div>
+        </div>
+        <div class="bg-gray-700 rounded-lg p-6 shadow-lg">
+            <p class="italic mb-4">"Professional, creative, and passionate about African stories. Highly recommended."</p>
+            <div class="font-semibold">— Jean-Paul M., Rwanda Film Festival</div>
+        </div>
+    </div>
+</section>
+  <!-- Footer -->
+  <footer class="bg-black text-center py-6">
+    <p>&copy; 2025 Agasobanuyefilms. Built with passion in Rwanda.</p>
+  </footer>
+</body>
+</html>

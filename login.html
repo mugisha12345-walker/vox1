@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            max-width: 350px;
+            margin: 80px auto;
+            padding: 30px 25px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        /* Navbar styles */
+        .navbar {
+            background: #0078d7;
+            padding: 14px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        /* Footer styles */
+        .footer {
+            background: #f4f4f4;
+            color: #888;
+            text-align: center;
+            padding: 16px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #005fa3;
+        }
+        .login-container .register-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #0078d7;
+            text-decoration: none;
+        }
+        .login-container .register-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+      <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?cinema,africa');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Telling African stories through the lens of authenticity.</h2>
+      <a href="#portfolio" class="mt-4 inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="px-6 py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-4">About Us</h3>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+      Agasobanuyefilms is a visionary Rwandan film production company dedicated to telling real, raw, and resonant stories. We specialize in documentaries, short films, and creative video storytelling that celebrates African culture, identity, and experience.
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="px-6 py-16 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-8 text-center">Our Work</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?film,africa" alt="Film 1" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Echoes of the Hills</h4>
+        </div>
+      </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required autocomplete="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password">
+
+            <button type="submit">Login</button>
+        </form>
+        <a class="register-link" href="/register.html">Don't have an account? Register</a>
+    </div>
+     <footer class="bg-black text-center py-6">
+    <p>&copy; 2025 Agasobanuyefilms. Built with passion in Rwanda.</p>
+  </footer>
+</body>
+</html></form></div>
