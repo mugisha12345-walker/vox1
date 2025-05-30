@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spin Loader</title>
+    <style>
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 100px auto;
+            display: block;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+        body{
+            background:linear-gradient(-45deg,red,blue);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;margin-top: 20px;">Welcome To AgasobanuyeFilms.com</h1>
+    <div class="spinner"></div>
+    <p style="text-align:center; font-size:18px; color:#222;">Please wait while we load your content...</p>
+    <footer style="text-align:center; padding:16px 0; color:#fff; background:#222; position:fixed; width:100%; bottom:0;">
+        &copy; 2024 Your Website. All rights reserved.
+    </footer>
+    <script>
+        setTimeout(function() {
+            window.location.href = "wer.html";
+        }, 5000);
+    </script>
+   
+</body>
+</html>

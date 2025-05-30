@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background: #222;
+            color: #fff;
+            padding: 1em 2em;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            flex: 1;
+            padding: 2em;
+            background: #f9f9f9;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="wer.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+      <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?cinema,africa');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-xl">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Telling African stories through the lens of authenticity.</h2>
+      <a href="#portfolio" class="mt-4 inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="px-6 py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-4">About Us</h3>
+    <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+      Agasobanuyefilms is a visionary Rwandan film production company dedicated to telling real, raw, and resonant stories. We specialize in documentaries, short films, and creative video storytelling that celebrates African culture, identity, and experience.
+    </p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="px-6 py-16 bg-gray-900">
+    <h3 class="text-3xl font-bold mb-8 text-center">Our Work</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://source.unsplash.com/400x300/?film,africa" alt="Film 1" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold text-xl">Echoes of the Hills</h4>
+        </div>
+      </div>
+    <main>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my portfolio page. Here you can find some of my recent projects.</p>
+        <!-- Add your portfolio items here -->
+        <section class="portfolio-items"></section>
+            <article>
+                <h2>Project One</h2>
+                <p>A responsive website built with HTML, CSS, and JavaScript. Features include a dynamic gallery and contact form.</p>
+                <a href="#" target="_blank">View Project</a>
+            </article>
+            <article>
+                <h2>Project Two</h2>
+                <p>A simple to-do list app using React. Allows users to add, edit, and delete tasks with local storage support.</p>
+                <a href="#" target="_blank">View Project</a>
+            </article>
+            <article>
+                <h2>Project Three</h2>
+                <p>Personal blog platform developed with Python and Flask. Includes user authentication and markdown support.</p>
+                <a href="#" target="_blank">View Project</a>
+            </article>
+        </section>
+        <style>
+            .portfolio-items {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2em;
+                margin-top: 2em;
+            }
+            .portfolio-items article {
+                background: #fff;
+                padding: 1.5em;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            }
+            .portfolio-items h2 {
+                margin-top: 0;
+            }
+            .portfolio-items a {
+                display: inline-block;
+                margin-top: 1em;
+                color: #0078d7;
+                text-decoration: underline;
+            }
+        </style>
+    </main>
+    <footer>
+        &copy; 2024 Your Name. All rights reserved.
+    </footer>
+</body>
+</html></html>
